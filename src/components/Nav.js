@@ -3,7 +3,7 @@ import logo from "../images/logo.png";
 
 const Nav = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar" id="navbar">
       <div className="container">
         <div className="navbar__container">
           <ul className="navbar__left">
@@ -13,25 +13,22 @@ const Nav = () => {
           </ul>
           <ul className="navbar__right">
             <li>
-              <a href="">Home</a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="">Blog</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

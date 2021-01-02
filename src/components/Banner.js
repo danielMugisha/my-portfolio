@@ -6,17 +6,17 @@ import {
   FaPinterest,
   FaInstagram,
   FaPlay,
+  FaGithub,
 } from "react-icons/fa";
 
 const Banner = () => {
   const [state] = React.useState({
-    title: "I am Jonathan Doe",
+    title: "I am Daniel MUGISHA",
     text:
-      "i'm Jonathan, professional web developer with long time\
-  experience in this field​",
+      "and I am a professional software developer, with proven experience of over 2 years now.​",
   });
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="container">
         <div className="row">
           <div className="col-6">
@@ -34,6 +34,9 @@ const Banner = () => {
                   </li>
                   <li>
                     <FaInstagram />
+                  </li>
+                  <li>
+                    <FaGithub />
                   </li>
                 </ul>
                 <h1>{state.title}</h1>

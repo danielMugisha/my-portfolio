@@ -10,7 +10,7 @@ const About = () => {
             culpa id dolore!",
   });
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="container">
         <div className="common">
           <h3 className="heading">{header.mainHeader}</h3>

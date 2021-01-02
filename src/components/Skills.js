@@ -21,7 +21,7 @@ const Skills = () => {
     { label: "Docker", bgcolor: "#ef6c00", completed: 60 },
   ]);
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="container">
         <div className="row alignCenter">
           <div className="col-6">

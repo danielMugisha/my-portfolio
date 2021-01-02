@@ -1,0 +1,45 @@
+.tags {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.tag {
+  background-color: #1f2235;
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  color: #adadad;
+  border-radius: 25px;
+  margin: 3px 0px;
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.active {
+  background-color: #1f2235;
+  border: 2px solid #057033;
+  color: #fff;
+  border-radius: 25px;
+  margin: 3px 0px;
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+}
+.Works__container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-card {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 25px;
+}
