@@ -24,30 +24,48 @@ const Banner = () => {
               <div className="header__section">
                 <ul className="header__ul">
                   <li>
-                    <FaFacebookF />
+                    <a
+                      href="https://web.facebook.com/danieldenzo/"
+                      target="_blank"
+                    >
+                      <FaFacebookF />
+                    </a>
                   </li>
                   <li>
-                    <FaTwitter />
+                    <a
+                      href="https://twitter.com/DanielMUGISHA19"
+                      target="_blank"
+                    >
+                      <FaTwitter />
+                    </a>
                   </li>
                   <li>
-                    <FaPinterest />
+                    <a
+                      href="https://www.pinterest.com/dandenzo/"
+                      target="_blank"
+                    >
+                      <FaPinterest />
+                    </a>
                   </li>
                   <li>
-                    <FaInstagram />
+                    <a
+                      href="https://www.instagram.com/mu_daniel1/"
+                      target="_blank"
+                    >
+                      <FaInstagram />
+                    </a>
                   </li>
                   <li>
-                    <FaGithub />
+                    <a href="https://github.com/danielMugisha" target="_blank">
+                      <FaGithub />
+                    </a>
                   </li>
                 </ul>
                 <h1>{state.title}</h1>
                 <p>{state.text}</p>
                 <div className="header__buttons">
-                  <a href="" className="btn btn-outline">
+                  <a href="#portfolio" className="btn btn-outline">
                     My Portfolio
-                  </a>
-                  &nbsp;&nbsp; &nbsp;{" "}
-                  <a href="" className="btn btn-smart">
-                    <FaPlay className="play" />
                   </a>
                 </div>
               </div>

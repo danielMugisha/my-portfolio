@@ -8,12 +8,14 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  animation: transitionIn 0.75s;
 }
 
 .header {
   width: 100%;
   height: 100vh;
   background: #23263a;
+  overflow: hidden;
 }
 
 .navbar {
@@ -47,10 +49,14 @@ body {
   font-weight: 500;
   font-size: 18px;
   padding: 0 15px;
+  transition: all 0.5s ease;
 }
 
+.navbar__right li a:hover {
+  color: #057033;
+}
 .container {
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -70,11 +76,11 @@ body {
 }
 
 .col-6 {
-  width: 48%;
+  width: 50%;
 }
 
 .col-4 {
-  width: 32%;
+  width: 33.33333333333333%;
 }
 
 .col-12 {
@@ -110,6 +116,11 @@ body {
   transition: all 0.5s ease-in;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header__ul li:hover {
   background: #057033;
   color: #fff;
@@ -123,6 +134,10 @@ body {
   font-size: 53px;
   font-weight: 700;
   margin-bottom: 20px;
+  overflow: hidden;
+  border-right: 5px solid transparent;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end 7;
 }
 .header__section {
   text-align: center;
@@ -141,9 +156,15 @@ body {
   border: none;
   color: #fff;
   background: inherit;
-
   text-decoration: none;
+  transition: all 0.5s ease-in;
 }
+
+.btn:hover {
+  background: #057033;
+  color: #dfdfdf;
+}
+
 .btn-outline {
   border: 2px solid #057033;
   border-radius: 50px;
@@ -156,9 +177,14 @@ body {
   padding: 13px 40px;
 }
 
+.btn-smart:hover .play {
+  color: #1f2235;
+}
+
 .play {
   font-size: 25px !important;
   padding-top: 10px;
+  transition: all 0.5s ease-in;
 }
 
 .banner__img {
@@ -209,6 +235,7 @@ body {
   background: #23263a;
   color: #fff;
   margin: 20px;
+  min-height: 300px;
   transition: all 0.5s ease-in;
 }
 
@@ -218,6 +245,7 @@ body {
 
 .services__box:hover .commonIcons {
   color: #fff;
+  transition: all 0.5s ease-in;
 }
 
 .commonIcons {
@@ -325,9 +353,12 @@ ul.ks-cboxtags li {
   padding: 100px 0;
 }
 
+.marginCard {
+  margin: 0 5px;
+}
+
 .formContainer {
   width: 100%;
-  margin: 10px;
 }
 
 .form-control {
@@ -400,7 +431,7 @@ input.btn {
 
 .footerSection_logo img {
   margin: 0 auto;
-  width: 138px;
+  width: 110px;
 }
 
 .footerContent {
@@ -415,13 +446,147 @@ input.btn {
   margin-bottom: 40px;
 }
 
+.toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: #fefefe;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
 @media (max-width: 765px) {
+  body {
+    background: green;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .container {
     width: 100%;
-    padding: 30px 0;
+    padding: 0 50px;
   }
 
   .col-6 {
     width: 100%;
+  }
+
+  .navbar__right {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: #1f2235;
+    top: 100px;
+    right: 0;
+    left: 0;
+  }
+
+  .navbar__right li a {
+    display: block;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .banner__img img {
+    display: none;
+  }
+
+  .header__section h1 {
+    font-size: 35px;
+  }
+
+  .header__section p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .common {
+    width: 100%;
+  }
+
+  .h-650 {
+    height: auto;
+  }
+
+  .about__img {
+    display: none;
+  }
+
+  .footer {
+    padding: 100px 0;
+    background: #23263a;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerContent {
+    width: 100%;
+  }
+
+  .footerSection_logo {
+    padding: 0;
+  }
+
+  .footerContent {
+    color: #dfdfdf;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .aboutCirles {
+    padding: 0px;
+    border-bottom: 1px solid #057033;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 365px) {
+  .header__ul li {
+    width: 40px;
+    height: 40px;
   }
 }

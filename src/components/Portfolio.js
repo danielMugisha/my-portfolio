@@ -24,13 +24,15 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio" id="portfolio">
-      <div className="common">
-        <h3 className="heading">{header.mainHeader}</h3>
-        <h1 className="mainHeader">{header.subHeading}</h1>
-        <p className="mainContent">{header.text}</p>
-        <div className="commonBorder"></div>
+      <div className="container">
+        <div className="common">
+          <h3 className="heading">{header.mainHeader}</h3>
+          <h1 className="mainHeader">{header.subHeading}</h1>
+          <p className="mainContent">{header.text}</p>
+          <div className="commonBorder"></div>
+        </div>
+        <Works />
       </div>
-      <Works />
     </div>
   );
 };
