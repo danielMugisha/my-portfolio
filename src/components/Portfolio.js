@@ -7,20 +7,8 @@ const Portfolio = () => {
     mainHeader: "PORTFOLIO",
     subHeading: "My works",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas\
-            culpa id dolore!",
+      "I have worked on various projects in varous categories and different platforms...",
   });
-
-  const Filters = [
-    { label: "all", isChecked: true },
-    { label: "automation", isChecked: false },
-    { label: "e-commerce", isChecked: false },
-    { label: "social", isChecked: false },
-    { label: "game", isChecked: false },
-    { label: "testing", isChecked: false },
-    { label: "react", isChecked: false },
-    { label: "python", isChecked: false },
-  ];
 
   return (
     <div className="portfolio" id="portfolio">

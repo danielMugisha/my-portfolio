@@ -5,8 +5,8 @@ import {
   FaTwitter,
   FaPinterest,
   FaInstagram,
-  FaPlay,
   FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Banner = () => {
@@ -41,14 +41,6 @@ const Banner = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.pinterest.com/dandenzo/"
-                      target="_blank"
-                    >
-                      <FaPinterest />
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="https://www.instagram.com/mu_daniel1/"
                       target="_blank"
                     >
@@ -58,6 +50,14 @@ const Banner = () => {
                   <li>
                     <a href="https://github.com/danielMugisha" target="_blank">
                       <FaGithub />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/danielmugisha189/"
+                      target="_blank"
+                    >
+                      <FaLinkedin />
                     </a>
                   </li>
                 </ul>
@@ -71,7 +71,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6" className="img__mover">
             <div className="banner__img">
               <img src={man} alt="profile" />
             </div>

@@ -6,8 +6,7 @@ const About = () => {
     mainHeader: "ABOUT",
     subHeading: "About Me",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas\
-            culpa id dolore!",
+      "I was lucky to find a hobby in my career, as a developer I like engineering solutions and building cool-looking designs...",
   });
   return (
     <div className="about" id="about">
@@ -26,35 +25,43 @@ const About = () => {
           </div>
           <div className="col-6">
             <div className="about__info">
-              <h1>Hi There</h1>
+              <h1>Know more...</h1>
               <div className="about__info-p1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur quos quibusdam beatae obcaecati deleniti optio
-                molestias harum cumque aut veritatis. Exercitationem, laboriosam
-                iusto. Sed esse magni itaque reiciendis, culpa iure?
+                Since beginning my journey as a developer, I learned a lot from
+                various projects, ranging from static websites, web apps,
+                desktop applications, games and other digital solutions which
+                gave me experience as a full stack developer, but I am naturally
+                drawn to front end development.
               </div>
               <div className="about__info-p2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Impedit quidem possimus saepe maiores et qui ullam magnam
-                quaerat sunt placeat.
+                Let's queue up a conversation, I will buy the coffee 😇, It's
+                always good to keep in touch...
               </div>
               <div className="info__contacts">
                 <div className="row">
                   <div className="col-6">
                     <strong>Name:</strong>
-                    <p>Jonathan Doe</p>
+                    <p>Daniel MUGISHA</p>
                   </div>
                   <div className="col-6">
                     <strong>Email:</strong>
-                    <p>example@domain.com</p>
+                    <p>dmugisha189@gmail.com</p>
                   </div>
                   <div className="col-6">
                     <strong>Phone:</strong>
-                    <p>+1 234 567890</p>
+                    <p>+250782035937</p>
                   </div>
                   <div className="col-6">
                     <strong>LinkedIn:</strong>
-                    <p>Jonathan_123</p>
+                    <p>
+                      {" "}
+                      <a
+                        href="https://www.linkedin.com/in/danielmugisha189/"
+                        target="_blank"
+                      >
+                        Daniel Mugisha
+                      </a>{" "}
+                    </p>
                   </div>
                 </div>
               </div>

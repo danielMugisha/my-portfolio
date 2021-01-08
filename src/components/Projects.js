@@ -11,7 +11,7 @@ export default [
     imageName:
       "https://i.pinimg.com/564x/f1/10/85/f1108555c7bb610117df203af67246ce.jpg",
     description: "Project Name",
-    tag: "new",
+    tag: "pro",
   },
   {
     id: "3",

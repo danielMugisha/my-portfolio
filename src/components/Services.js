@@ -12,8 +12,7 @@ const Services = () => {
     mainHeader: "SERVICES",
     subHeading: "My Services",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas\
-        culpa id dolore!",
+      "I offer a range of services, including designing, building and managing web applications, desktop apps and many more... ",
   });
 
   const [state] = React.useState([

@@ -3,10 +3,9 @@ import logo from "../images/logo.png";
 import {
   FaFacebookF,
   FaTwitter,
-  FaPinterest,
   FaInstagram,
-  FaPlay,
   FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -33,13 +32,13 @@ const Footer = () => {
                   <FaTwitter />
                 </li>
                 <li>
-                  <FaPinterest />
-                </li>
-                <li>
                   <FaInstagram />
                 </li>
                 <li>
                   <FaGithub />
+                </li>
+                <li>
+                  <FaLinkedin />
                 </li>
               </ul>
             </div>

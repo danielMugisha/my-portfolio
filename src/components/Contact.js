@@ -8,8 +8,7 @@ export default function ContactUs() {
     mainHeader: "THINKING OF A PROJECT?",
     subHeading: "Contact Me",
     text:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas\
-            culpa id dolore!",
+      "I am available for collaboration, just hit me up and let's make it work",
   });
 
   function sendEmail(e) {
